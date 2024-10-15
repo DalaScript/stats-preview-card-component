@@ -39,13 +39,19 @@ main {
 .preview-card__img {
   width: 327px;
   height: 240px;
-  background-image: url("../images/image-header-mobile.jpg");
-  opacity: 0.75;
-  background-size: cover;
-  background-position: center;
   background-color: #aa5cdb;
-  /* #AB5CDB with 50% opacity */
-  background-blend-mode: multiply;
+  position: relative;
+}
+.preview-card__img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(../images/image-header-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  opacity: 75.11%;
+  position: absolute;
 }
 .preview-card__inner-text {
   padding: 40px 31px;
