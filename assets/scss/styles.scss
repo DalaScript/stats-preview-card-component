@@ -1,16 +1,139 @@
-
-// Primary
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
 $very-dark-blue: #090b1a;
 $dark-desaturated-blue: #1b1938;
 $soft-violet: #aa5cdb;
-
-// Neutral
+/* Neutral
+ ***************/
 $white: #ffffff;
 $slightly-transparent-white: #ffffffbf;
 $slightly-transparent-white: #ffffff99;
 
+/* Global Variables
+ ******************************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: $very-dark-blue;
+}
+
+picture {
+    display: flex;
+}
+
+/* Body Variables
+ ******************************/
+main {
+    padding: 88px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-card {
+    width: 100%;
+    max-width: 327px;
+    border-radius: 8px;
+
+    background-color: $dark-desaturated-blue;
+    overflow: hidden;
+
+    &__img {
+        width: 327px;
+        height: 240px;
+        background-image: url("../images/image-header-mobile.jpg");
+        opacity: .75;
+        background-size: cover;
+        background-position: center;
+        background-color: $soft-violet; /* #AB5CDB with 50% opacity */
+        background-blend-mode: multiply;
+
+    }
+
+    &__inner-text {
+        padding: 40px 31px;
+    }
+
+    &__title {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        
+        text-align: center;
+
+        color: $white;
+
+        span {
+            color: $soft-violet;
+        }
+    }
+
+    &__caption {
+        margin-top: 16px;
+
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+
+        text-align: center;
+
+        color: $white;
+
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+
+    &__benefits-container {
+        margin-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        text-align: center;
+    }
+
+    &__benefit-title {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        
+        text-align: center;
+
+        color: $white;
+    }
+
+    &__benefit-caption {
+        margin-top: 2px;
+
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+
 }

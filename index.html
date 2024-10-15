@@ -5,19 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 
-  
   <title>Stats preview card component | Frontend Mentor</title>
+
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
+  <main>
+    <article class="preview-card">
+      <div class="preview-card__img"></div>
+      <div class="preview-card__inner-text">
+        <p class="preview-card__title">
+          Get <span>insights</span> that help your business grow.
+        </p>
+        <p class="preview-card__caption">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+        </p>
 
-  Get insights that help your business grow.
+        <div class="preview-card__benefits-container">
+          <div class="preview-card__benefit">
+            <p class="preview-card__benefit-title">10k+</p>
+            <p class="preview-card__benefit-caption">companies</p>
+          </div>
+          <div class="preview-card__benefit">
+            <p class="preview-card__benefit-title">314</p>
+            <p class="preview-card__benefit-caption">templates</p>
+          </div>
+          <div class="preview-card__benefit">
+            <p class="preview-card__benefit-title">12m+</p>
+            <p class="preview-card__benefit-caption">queries</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
 </body>
 </html>

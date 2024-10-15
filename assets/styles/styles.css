@@ -1,5 +1,107 @@
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+/* Neutral
+ ***************/
+/* Global Variables
+ ******************************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+picture {
+  display: flex;
+}
+
+/* Body Variables
+ ******************************/
+main {
+  padding: 88px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-card {
+  width: 100%;
+  max-width: 327px;
+  border-radius: 8px;
+  background-color: #1b1938;
+  overflow: hidden;
+}
+.preview-card__img {
+  width: 327px;
+  height: 240px;
+  background-image: url("../images/image-header-mobile.jpg");
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  background-color: #aa5cdb;
+  /* #AB5CDB with 50% opacity */
+  background-blend-mode: multiply;
+}
+.preview-card__inner-text {
+  padding: 40px 31px;
+}
+.preview-card__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+.preview-card__title span {
+  color: #aa5cdb;
+}
+.preview-card__caption {
+  margin-top: 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.preview-card__benefits-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+.preview-card__benefit-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+.preview-card__benefit-caption {
+  margin-top: 2px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
