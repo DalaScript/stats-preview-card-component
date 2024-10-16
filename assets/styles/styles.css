@@ -111,3 +111,50 @@ main {
   mix-blend-mode: normal;
   opacity: 0.6;
 }
+
+@media only screen and (min-width: 1440px) {
+  main {
+    padding: 177px;
+  }
+
+  .preview-card {
+    max-width: 1100px;
+    height: 446px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .preview-card__img {
+    flex-basis: 540px;
+    height: 100%;
+  }
+  .preview-card__img::before {
+    background: url("../images/image-header-desktop.jpg");
+  }
+  .preview-card__inner-text {
+    flex-basis: 570px;
+    padding: 71px 95px 59px 71.5px;
+  }
+  .preview-card__title {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+  }
+  .preview-card__caption {
+    margin-top: 25px;
+    text-align: left;
+  }
+  .preview-card__benefits-container {
+    margin-top: 72px;
+    flex-direction: row;
+    gap: 60px;
+  }
+  .preview-card__benefit:nth-of-type(2) {
+    margin-left: 3px;
+  }
+  .preview-card__benefit-title {
+    text-align: left;
+  }
+  .preview-card__benefit-caption {
+    text-align: left;
+  }
+}

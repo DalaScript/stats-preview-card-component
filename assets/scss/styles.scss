@@ -148,5 +148,62 @@ main {
         mix-blend-mode: normal;
         opacity: 0.6;
     }
+}
 
+@media only screen and (min-width: 1440px) {
+    main {
+        padding: 177px;
+    }
+
+    .preview-card {
+        max-width: 1100px;
+        height: 446px;
+
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__img {
+            flex-basis: 540px;
+            height: 100%;
+
+            &::before {
+                background: url("../images/image-header-desktop.jpg");
+            }
+        }
+
+        &__inner-text {
+            flex-basis: 570px;
+            padding: 71px 95px 59px 71.5px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+
+            text-align: left;
+        }
+
+        &__caption {
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        &__benefits-container {
+            margin-top: 72px;
+            flex-direction: row;
+            gap: 60px;
+        }
+
+        &__benefit:nth-of-type(2) {
+            margin-left: 3px;
+        }
+
+        &__benefit-title {
+            text-align: left;
+        }
+
+        &__benefit-caption {
+            text-align: left;
+        }
+    }
 }
