@@ -61,6 +61,8 @@ Alongside this, I am working on projects and following a learning path on Fronte
 - [W3Schools](https://www.w3schools.com/) - This is my favorite documentation platform I've been using since I started programming, it's the best explained resource.
 - [YouTube](https://www.youtube.com/) - I'm always looking for news and listening to other developers, sharing their experiences so that I can see many different solutions to a problem.
 
+## Author
+
 ### Connect with Me
 
 - [Instagram](https://www.instagram.com/DalaScript)
